@@ -164,3 +164,42 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 # Vibrator
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.vibrator-service.rosemary
 RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/hw/android.hardware.vibrator-service.rosemary
+
+#SHRP Flags
+
+SHRP_DEVICE_CODE := rosemary
+
+SHRP_PATH := device/redmi/$(SHRP_DEVICE_CODE)
+
+SHRP_MAINTAINER := lynx
+
+SHRP_REC_TYPE := Normal
+
+SHRP_DEVICE_TYPE := A/B
+
+SHRP_REC := /dev/block/bootdevice/by-name/boot
+
+SHRP_HAS_RECOVERY_PARTITION := N/A
+
+SHRP_AB := true
+
+SHRP_EDL_MODE := 0
+
+SHRP_INTERNAL := /sdcard
+
+SHRP_EXTERNAL := /sdcard1
+
+SHRP_OTG := /usb_otg
+
+SHRP_FLASH := 1
+
+SHRP_STATUSBAR_RIGHT_PADDING := 24
+
+SHRP_STATUSBAR_LEFT_PADDING := 24
+
+SHRP_EXPRESS := true
+
+SHRP_EXPRESS_USE_DATA := true
+
+SHRP_TORCH_PATH := "/sys/devices/platform/flashlights_mt6360/torch_brightness"
+
